@@ -3,7 +3,7 @@
   https://codepen.io/xposedbones/pen/aOrQVy
 */
 :root {
-  --anispeed: 10s;
+  --anispeed: 25s;
 }
 
 body {
@@ -468,3 +468,21 @@ body {
   }
 }
 /* # Mesmerizing by xposedbones */
+/*Querries*/
+@media (prefers-reduced-motion){
+  :root {
+    --anispeed: 250s;
+  }
+}
+
+@media (prefers-color-scheme){
+  html{
+    background-color: #000;
+  }
+  .wrapper{
+    outline: 1px solid #fff;
+  }
+  .holder .circle{
+    border: 13px solid #fff;
+  }
+}
